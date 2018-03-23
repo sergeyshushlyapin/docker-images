@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+
+  sql:
+    image: sc901xm1sql
+    build:
+      context: .\sitecore\9.0.1 rev. 171219 SQL
+
+  cm:
+    image: sc901xm1cm
+    build:
+      context: .\sitecore\9.0.1 rev. 171219 XM1 CM
+    ports: 
+      - 80:80
+    links:
+      - sql
