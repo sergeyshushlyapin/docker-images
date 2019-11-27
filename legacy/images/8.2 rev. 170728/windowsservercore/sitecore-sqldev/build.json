@@ -12,7 +12,8 @@
       "build-options": [
         "--memory 4GB",
         "--build-arg BASE_IMAGE=mssql-developer:2017-windowsservercore-1803"
-      ]
+      ],
+      "deprecated": true
     }
   ],
   "sources": [
